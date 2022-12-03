@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/w02-porfolio-challenge/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dc0e4aa84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>RG Portfolio</title>
 </head>
-<body>
+<body id="grid-root">
  <!-- main logo / nav -->
- <header>
-    <h1>RG</h1>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>My Work</li>
-        <li>Contact</li>
+ <header class="header">
+    <a href="#home" class="logo"><h1>RG</h1></a>
+    <nav id="nav">
+      <ul class="menu">
+        <li ><a href="#about">About</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <section class="hero">
     <div>
-      <h2>Hi I am Reza</h2>
+      <h2>Hi &#128075;&#127997; I am Reza</h2>
       <h2>I build things for the web.</h2>
       <p>I am a software developer in the making.</p>
     </div>
@@ -55,7 +58,7 @@
             <img src="#" alt="">
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
-            <a href="github#">Github</a>
+            <a href="github#"><i class="fa-brands fa-github"></i></a>
             
           </div>
         </li>
@@ -64,7 +67,7 @@
             <img src="#" alt="">
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
-            <a href="github#">Github</a>
+            <a href="github#"><i class="fa-brands fa-github"></i></a>
             
           </div>
         </li>
@@ -73,7 +76,7 @@
             <img src="#" alt="">
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
-            <a href="github#">Github</a>
+            <a href="github#"><i class="fa-brands fa-github"></i></a>
             
           </div>
         </li>
@@ -84,8 +87,8 @@
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Get In Touch</h2>
-      <p>Although i am currently under training, my inbox is always open. Wether you have a opening for a trainee position, curious question or just want to say hi.</p>
-      <a href="mailto:bytemefirst@gmail.com" class="email-link"></a>
+      <p>Although i am currently under training, my inbox is always open. Wether you have a opening for a trainee position, curious question or just want to say hi.:wave:</p>
+      <a href="mailto:bytemefirst@gmail.com" class="email-link"><i class="fa-solid fa-envelope"></i></a>
     </section>
 </body>
 </html>

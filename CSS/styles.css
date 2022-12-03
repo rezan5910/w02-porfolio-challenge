@@ -1,0 +1,59 @@
+:root {
+    --main-bg-col:#5A1073;
+    --txt-col:#FF6200;
+    --sec-col:#f8c630;
+    --comp-col:#297310;
+    --text-col:lightgrey; 
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+#grid-root {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+}
+body {
+    background-color: var(--main-bg-col);
+}
+/* nav bar and logo */
+header {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+
+}
+.header .logo {
+    margin: auto 20px;
+}
+#nav {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.menu {
+    display: flex;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+   
+}
+
+/* hero section */
+.hero {
+    color: var(--txt-col);
+    width: 75%;
+
+}
+
+/* about me */
+/* portfolio */
+/* contact */
+
+/* media query */
+@media screen only and (max-width:50em) {
+    
+}
