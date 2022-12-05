@@ -43,7 +43,7 @@ header nav {
 }
 header nav a {
     color: var(--text-col);
-    margin-left: 10px;
+    margin-left: 20px;
     text-decoration: none;
 }
 
@@ -55,14 +55,14 @@ header nav a {
     display:grid;
 }
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--comp-col);
     grid-column: 2 / span 6 ;
 }
 .hero p {
     padding-top: 20px;
     color: var(--secondary-col);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     grid-column:2/ span 5;
 }
 .hero img {
@@ -72,10 +72,8 @@ header nav a {
 
 /* about me */
 #about {
-    background-color: lightcoral;
     padding: 15px;
     grid-column: var(--content-container);
-    /* display: grid; */
     background-color: var(--primary-col);
 }
 #about > h2 {
@@ -85,30 +83,48 @@ header nav a {
     grid-column: span 12;
     text-align: center;
     color: var(--text-col);
-
 }
 
 #about > p {
     color: var(--text-col);
     grid-column: span 12;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
 }
 
 #about >ul {
     color: var(--text-col);
     width: 100%;
     display:grid;
-    grid-template-columns:subgrid;
-    
-    /* grid:
-    "js  react  "
-    "css  node "
-    "html  eth" */
+    grid-template-columns:1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.25rem;
 }
 #about .skill-list .html {
-    grid-column: 3;
+    grid-column: 1;
+    grid-row: 1;
 }
 #about >ul .css{
-    grid-column: 3;
+    grid-column: 1;
+    grid-row: 2;
+}
+#about >ul .js {
+    grid-column: 1;
+    grid-row: 3;
+}
+#about >ul .react{
+    grid-column: 2;
+    grid-row: 1;
+}
+#about >ul .node{
+    grid-column: 2;
+    grid-row: 2;
+}
+#about >ul .eth {
+    grid-column: 2;
+    grid-row: 3;
 }
 
 
@@ -117,14 +133,46 @@ header nav a {
     background-color: var(--secondary-col);
     grid-column: var(--content-container);
 }
+#work h2 {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column: span 12;
+    text-align: center;
+    color: var(--text-col);
+
+}
 /* contact */
 #contact {
     background-color: var(--comp-col);
     grid-column: var(--content-container);
+    display: grid;
+}
+#contact h2 {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column: span 12;
+    text-align: center;
+    color: var(--text-col);
+}
+#contact > p {
+    color: var(--text-col);
+    grid-column: span 12;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#contact> a{
+    text-decoration: none;
+    grid-column: span 12;
+    text-align: center;
+    
+    
 }
 
 /* media query */
-@media screen only and (max-width:50em) {
+@media screen and (max-width:50em) {
     
 }
 
