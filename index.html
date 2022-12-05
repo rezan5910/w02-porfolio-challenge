@@ -10,43 +10,43 @@
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>RG Portfolio</title>
 </head>
-<body id="grid-root">
+<body>
  <!-- main logo / nav -->
- <header class="header">
-    <a href="#home" class="logo"><h1>RG</h1></a>
-    <nav id="nav">
-      <ul class="menu">
-        <li ><a href="#about">About</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="grid">
+  <h1 class="logo">RG</h1>
+  <nav class="navigation">
+    <a href="about">About Me</a>
+    <a href="work">My Work</a>
+    <a href="contact">Contact</a>
+  </nav>
+</header>
 
+
+  <main class="grid">
   <!-- hero banner -->
   <section class="hero">
-    <div>
-      <h2>Hi &#128075;&#127997; I am Reza</h2>
-      <h2>I build things for the web.</h2>
-      <p>I am a software developer in the making.</p>
-    </div>
-  </section>
+    <h2>Hi &#128075;&#127997; I am Reza, <br>I build things for the web.</h2>
+    <p>I am a software developer in the making.</p>
+    <img width="400px"  src="./assets/images/frontend-developer.svg" alt="">
 
-  <main class="page-wrapper">
+  </section>
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
-      <p>Hello, my name is Reza and i enjoy solving problems with tech.</p>
-      <p>My interest in web development started back in 2019 when i decided that i want to solve many problems in the world with blockchain in WEB 3.0. Turns out the world had different plans and gave us a worldwide pandemic which you may have heard of.</p>
-      <p>Fast forward to today where i will be working with following few technologies to get back to solving world problem for greater good:</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript (ES6+)</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Ethereum.js</li>
+      <p>Hello, my name is Reza and i enjoy solving problems with tech.
+        My interest in web development started back in 2019 when i decided that i want to solve many problems in the world with blockchain in WEB 3.0. Turns out the world had different plans and gave us a worldwide pandemic which you may have heard of.
+        Fast forward to today where i will be working with following few technologies to get back to solving world problem for greater good:</p>
+        
+      <ul class="skill-list">
+        <li class="html">HTML <i class="fa-brands fa-html5"></i></li>
+        <li class="css">CSS <i class="fa-brands fa-css3-alt"></i></li>
+        <li>JavaScript (ES6+) <i class="fa-brands fa-square-js"></i></li>
+        <li>React <i class="fa-brands fa-react"></i></li>
+        <li>Node.js <i class="fa-brands fa-node"></i></li>
+        <li>Ethereum.js <i class="fa-brands fa-ethereum"></i></li>
       </ul>
+
+
     </section>
 
     <!-- portfolio container -->
@@ -59,7 +59,6 @@
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
             <a href="github#"><i class="fa-brands fa-github"></i></a>
-            
           </div>
         </li>
         <li>
@@ -68,7 +67,6 @@
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
             <a href="github#"><i class="fa-brands fa-github"></i></a>
-            
           </div>
         </li>
         <li>
@@ -77,7 +75,6 @@
             <h3><a href="">Project title</a></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sunt a. Inventore repellendus commodi voluptatibus, aperiam at id repellat nostrum.</p>
             <a href="github#"><i class="fa-brands fa-github"></i></a>
-            
           </div>
         </li>
       </ul>

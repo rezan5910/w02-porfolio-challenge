@@ -1,59 +1,130 @@
 :root {
-    --main-bg-col:#5A1073;
-    --txt-col:#FF6200;
-    --sec-col:#f8c630;
-    --comp-col:#297310;
-    --text-col:lightgrey; 
     font-family: 'Montserrat', sans-serif;
+    --primary-col:#083359;
+    --secondary-col:#BF930F;
+    --third-col:#BF820F;
+    --comp-col:#AF3215;
+    --text-col:#D9C893; 
+    --content-container: 1 / 12;
+}
+html {
+    /* images were casuing an overflow apllying a width of 100% to html fixed this */
+    width: 100%;
 }
 * {
     box-sizing: border-box;
 }
-
-#grid-root {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 100%;
-    min-height: 100vh;
-}
 body {
-    background-color: var(--main-bg-col);
+    margin: 0;
+    background-color: var(--primary-col);
 }
-/* nav bar and logo */
-header {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
-
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
 }
-.header .logo {
-    margin: auto 20px;
+main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+/* header/logo/nav */
+header {
+    padding: 20px 40px;
+    align-items: center;
+  }
+header h1 {
+    color: var(--text-col);
+    grid-column: span 6;
 }
-#nav {
-display: flex;
-justify-content: flex-end;
-align-items: center;
+header nav {
+    grid-column: 7/ span 6;
+    justify-self: end;
 }
-.menu {
-    display: flex;
-}
-.menu a {
-    display: block;
+header nav a {
+    color: var(--text-col);
+    margin-left: 10px;
     text-decoration: none;
-   
 }
 
 /* hero section */
 .hero {
     color: var(--txt-col);
-    width: 75%;
-
+    background: var(--primary-col);
+    grid-column: var(--content-container);
+    display:grid;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--comp-col);
+    grid-column: 2 / span 6 ;
+}
+.hero p {
+    padding-top: 20px;
+    color: var(--secondary-col);
+    font-size: 1.3rem;
+    grid-column:2/ span 5;
+}
+.hero img {
+    grid-column: 8 /span 2;
+    width: 100%;
 }
 
 /* about me */
+#about {
+    background-color: lightcoral;
+    padding: 15px;
+    grid-column: var(--content-container);
+    /* display: grid; */
+    background-color: var(--primary-col);
+}
+#about > h2 {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column: span 12;
+    text-align: center;
+    color: var(--text-col);
+
+}
+
+#about > p {
+    color: var(--text-col);
+    grid-column: span 12;
+}
+
+#about >ul {
+    color: var(--text-col);
+    width: 100%;
+    display:grid;
+    grid-template-columns:subgrid;
+    
+    /* grid:
+    "js  react  "
+    "css  node "
+    "html  eth" */
+}
+#about .skill-list .html {
+    grid-column: 3;
+}
+#about >ul .css{
+    grid-column: 3;
+}
+
+
 /* portfolio */
+#work {
+    background-color: var(--secondary-col);
+    grid-column: var(--content-container);
+}
 /* contact */
+#contact {
+    background-color: var(--comp-col);
+    grid-column: var(--content-container);
+}
 
 /* media query */
 @media screen only and (max-width:50em) {
     
 }
+
